@@ -15,7 +15,7 @@ Gmail profile:
 """
 
 
-def send_email(args:dict = None) -> None:
+def send_email(args: dict = None) -> None:
     # Setting up the email receiver and sender
     port = 465
     smtp_server = "smtp.gmail.com"
@@ -57,7 +57,6 @@ def send_email(args:dict = None) -> None:
     event.add('dtstart', datetime.datetime(year, month, day, 0, 0, 0))
     event.add('dtend', datetime.datetime(year, month, day, 23, 59, 59))
     event.add('dtstamp', datetime.datetime.now())
-    # event.add('location', 'Test Location')
     cal.add_component(event)
 
     # Attaching the calendar event to the email message
