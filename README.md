@@ -7,12 +7,13 @@ Simple "to do list" app, using Python, PyQT5, capable of adding, removing, and e
 - [Isaac Palma.](https://github.com/Isaac-PM)
 - [Emilio Chang.](https://github.com/EmilioChang)
 - [Karla Quirós.](https://github.com/Karla-QD)
+- [Alberto Herdocia.](https://github.com/Albert14Aguero)
 
 ***
 
-# Installation
-
 # About
+
+
 
 # Gallery
 
@@ -35,9 +36,3 @@ Simple "to do list" app, using Python, PyQT5, capable of adding, removing, and e
 # App icon
 
 By: **hqrloveq**. Retrieved from https://www.flaticon.com/free-icon/check_5610944?term=check&page=1&position=4&origin=tag&related_id=5610944
-
-# Pending
-
-- `pickle` file with tasks and email.
-- `.exe` file: https://pypi.org/project/py2exe/#downloads
-- Finish documentation.

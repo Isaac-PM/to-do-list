@@ -11,11 +11,19 @@ from icalendar import Calendar, Event
 """
 Gmail profile:
     - Email: development.test.700@gmail.com
-    - Password: nozx taub jlqc vhus
+    - Password: nozx taub jlqc vhus (App password)
 """
 
 
-def send_email(args: dict = None) -> None:
+def send_email(args: dict = None) -> bool:
+    """This function sends an email with a calendar event.
+
+    Args:
+        args (dict, optional): Defaults to None.
+
+    Returns:
+        bool: True if the email was sent successfully, False otherwise.
+    """
     # Setting up the email receiver and sender
     port = 465
     smtp_server = "smtp.gmail.com"
@@ -65,11 +73,15 @@ def send_email(args: dict = None) -> None:
     msg.attach(ics)
 
     # Sending the email
-    msg['Subject'] = "New task!"
-    msg['From'] = sender_email
-    msg['To'] = receiver_email
-    context = ssl.create_default_context()
-    with smtplib.SMTP_SSL(smtp_server, port, context=context) as server:
-        server.login(sender_email, password)
-        server.send_message(msg, from_addr=sender_email,
-                            to_addrs=receiver_email)
+    try:
+        msg['Subject'] = "New task!"
+        msg['From'] = sender_email
+        msg['To'] = receiver_email
+        context = ssl.create_default_context()
+        with smtplib.SMTP_SSL(smtp_server, port, context=context) as server:
+            server.login(sender_email, password)
+            server.send_message(msg, from_addr=sender_email,
+                                to_addrs=receiver_email)
+    except Exception as e:
+        return False
+    return True
