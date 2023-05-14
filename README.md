@@ -2,10 +2,6 @@
 
 Simple "to do list" app, using Python, PyQT5, capable of adding, removing, and editing tasks, plus sending email reminders.
 
-## Authors
-
-- [Isaac Palma.](https://github.com/Isaac-PM)
-
 ***
 
 # About
