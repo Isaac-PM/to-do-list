@@ -5,9 +5,6 @@ Simple "to do list" app, using Python, PyQT5, capable of adding, removing, and e
 ## Authors
 
 - [Isaac Palma.](https://github.com/Isaac-PM)
-- [Emilio Chang.](https://github.com/EmilioChang)
-- [Karla Quirós.](https://github.com/Karla-QD)
-- [Alberto Herdocia.](https://github.com/Albert14Aguero)
 
 ***
 
