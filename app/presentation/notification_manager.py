@@ -11,7 +11,7 @@ from icalendar import Calendar, Event
 """
 Gmail profile:
     - Email: development.test.700@gmail.com
-    - Password: nozx taub jlqc vhus (App password)
+    - Password: XXX XXX XXX (App password)
 """
 
 
@@ -29,7 +29,7 @@ def send_email(args: dict = None) -> bool:
     smtp_server = "smtp.gmail.com"
     sender_email = "development.test.700@gmail.com"
     receiver_email = args["to"]
-    password = "nozx taub jlqc vhus"
+    password = "XXX XXX XXX"
 
     # Creating the email message
     msg = MIMEMultipart()
